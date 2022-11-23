@@ -1,0 +1,41 @@
+.modal {
+    height: calc(100% - 57px);
+    justify-content: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
+    padding: 0 20px 20px;
+    img {
+        width: 100%;
+        max-height: 160px;
+        object-fit: contain;
+    }
+}
+.wrapper {
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    width: 50%;
+    height: calc(100vh - 100px);
+    background-color: rgb(201, 201, 201);
+    border-radius: 12px;
+    transform: translate(50%, 10px);
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 10px 20px;
+
+    &::before {
+        left: 0;
+        position: absolute;
+        border-bottom: 1px solid black;
+        top: 0;
+        width: 100%;
+        content: '';
+    }
+}
